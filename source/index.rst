@@ -19,17 +19,19 @@ Integrating the genome knowledge and the translational medicine GenomeUP aims to
 
 The goal of GenomeUP is to equip doctors with all the information needed to understand the role the genome has in diseases and, also, to allow faster and more efficient diagnosis and treatments.
 
+.. toctree::
+   :maxdepth: 2
+   
+   contact
+
+The User Guide
+==============
 
 .. toctree::
    :maxdepth: 2
 
    annotation
-   contact
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+

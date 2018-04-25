@@ -1,7 +1,7 @@
 GenomeUp documentation
 ===============================
 
-<a href="https://www.genomeup.com/">GenomeUp</a> is a bioinformatics startup, based in Rome.
+<https://www.genomeup.com/ GenomeUp> is a bioinformatics startup, based in Rome.
 
 
 

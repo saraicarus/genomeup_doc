@@ -379,7 +379,7 @@ CADD phred-like score. This is phred-like rank score based on whole genome CADD 
 **GERPpp_NR**
 GERP++ neutral rate
 
-*  **GERPpp_RS**
+**GERPpp_RS**
 GERP++ RS score, the larger the score, the more conserved the site
 
 **GERPpp_RS_rankscore**

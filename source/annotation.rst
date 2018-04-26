@@ -1,7 +1,7 @@
 Variants annotation fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**General variant information**
+General variant information
 -------------------------------
 
 **chrom**
@@ -41,7 +41,7 @@ The VCF IDfield.
 Variant transcript number for the most severely affected transcript [capire se serve]
 
 
-**Structural variation columns**
+Structural variation columns
 --------------------------------
 
 **sv_cipos_start_left**
@@ -88,7 +88,7 @@ Absence (0) or presence (1) of the variant in dbsnp
 A comma-separated list of rs ids for variants present in dbSNP
 
 
-**Clinical information**
+Clinical information
 ------------------------
 
 **clinvar_sig**
@@ -257,7 +257,7 @@ The Sequence ontology term for the most severe consequence
 Severity of the highest order observed for the variant
 
 
-**Function predictor**
+Function predictor
 ----------------------
 
 **Polyphen2_HDIV_score_dbNSFP**
@@ -375,7 +375,7 @@ Number of observed component scores (except the maximum frequency in the 1000 ge
 Estimated nonsynonymous-to-synonymous-rate ratio (Omega, reported by LRT)
 
 
-**Conservation scores**
+Conservation scores
 -----------------------
 
 **CADD_raw_dbNSFP** 
@@ -507,7 +507,7 @@ Presence/absence of the variant in the ESP project data
 Whether a SNP is on the Illumina HumanExome Chip
 
 
-**Population information**
+Population information
 --------------------------
 
 **max_aaf_all**
@@ -649,7 +649,7 @@ Is a variant in an error prone genomic position, using CSE: Context-Specific Seq
 Experimentally validated human enhancers from VISTA (http://enhancer.lbl.gov/frnt_page_n.shtml)
 
 
-**ENCODE information**
+ENCODE information
 ----------------------
 
 **encode_tfbs**
@@ -680,7 +680,7 @@ ENCODE consensus segmentation prediction for HuVEC.
 ENCODE consensus segmentation prediction for k562.
 
 
-**Cancer related columns**
+Cancer related columns
 --------------------------
 
 **COSMIC_ID**
@@ -690,7 +690,7 @@ A list of known COSMIC ids for this variant.
 The count of known COSMIC ids for this variant.
 
 
-**HGVS nomenclature**
+HGVS nomenclature
 ---------------------
 **vep_hgvsc**
 Human Genome Variation Sequence c-syntax nomenclature (from VEP)

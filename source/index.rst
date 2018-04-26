@@ -1,7 +1,8 @@
 GenomeUp documentation
 ===============================
+.. _'GenomeUp':https://www.genomeup.com/
 
-.._'GenomeUp':https://www.genomeup.com/ is a bioinformatics startup, based in Rome.
+:GenomeUp: is a bioinformatics startup, based in Rome.
 
 
 Currently Genomeup is accelerated in LUISS ENLABS, the startup accelerator based in Rome, Italy. They are operated by LVenture Group, a publicly listed venture capital company that provides startups with funding and network.

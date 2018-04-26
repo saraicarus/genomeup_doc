@@ -92,10 +92,13 @@ html_theme_options = {
         'logo':'logo.png',
         }
 
+# Add any paths that contain custom themes here, relative to this directory.
+html_theme_path = [alabaster.get_path()]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['nstatic']
+html_static_path = ['_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

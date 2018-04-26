@@ -90,7 +90,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-        'logo': 'logo.png',
+        'logo': 'logo.jpg',
         }
 
 # Add any paths that contain custom themes here, relative to this directory.

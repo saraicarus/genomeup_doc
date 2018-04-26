@@ -1,6 +1,8 @@
 Variants annotation fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-* **General variant information**
+
+**General variant information**
+-------------------------------
 
 **chrom**
 The chromosome on which the variant resides (from VCF CHROM field).
@@ -38,7 +40,9 @@ The VCF IDfield.
 **anno_id**
 Variant transcript number for the most severely affected transcript [capire se serve]
 
-* **Structural variation columns**
+
+**Structural variation columns**
+--------------------------------
 
 **sv_cipos_start_left**
 The leftmost position of the leftmost SV breakpoint confidence interval.
@@ -83,7 +87,10 @@ Absence (0) or presence (1) of the variant in dbsnp
 **rs_ids**
 A comma-separated list of rs ids for variants present in dbSNP
 
-* **Clinical information**
+
+**Clinical information**
+------------------------
+
 **clinvar_sig**
 The clinical significance scores for each of the variant according to ClinVar: unknown, untested, non-pathogenic, probable-non-pathogenic,probable-pathogenic, pathogenic, drug-response, histocompatibility, other
 
@@ -249,7 +256,9 @@ The Sequence ontology term for the most severe consequence
 **impact_severity** 
 Severity of the highest order observed for the variant
 
-* **Function predictor**
+
+**Function predictor**
+----------------------
 
 **Polyphen2_HDIV_score_dbNSFP**
 Polyphen2 score based on HumDiv, i.e. hdiv_prob. The score ranges from 0 to 1. Multiple entries separated by ";"
@@ -365,7 +374,9 @@ Number of observed component scores (except the maximum frequency in the 1000 ge
 **LRT_Omega**
 Estimated nonsynonymous-to-synonymous-rate ratio (Omega, reported by LRT)
 
-*  **Conservation scores**
+
+**Conservation scores**
+-----------------------
 
 **CADD_raw_dbNSFP** 
 Combined annotation dependent depletion prediction: higher values are more deleterious.
@@ -495,7 +506,9 @@ Presence/absence of the variant in the ESP project data
 **exome_chip**
 Whether a SNP is on the Illumina HumanExome Chip
 
-*  **Population information**
+
+**Population information**
+--------------------------
 
 **max_aaf_all**
 The maximum of aaf_gnomad{afr,amr,eas,nfe,sas},aaf_esp_ea, aaf_esp_aa, aaf_1kg_amr, aaf_1kg_eas,aaf_1kg_sas,aaf_1kg_afr,aaf_1kg_eur,aaf_adj_exac_afr,aaf_adj_exac_amr,aaf_adj_exac_eas,aaf_adj_exac_nfe,aaf_adj_exac_sas. and -1 if none of those databases/populations contain the variant.
@@ -635,7 +648,9 @@ Is a variant in an error prone genomic position, using CSE: Context-Specific Seq
 **vista_enhancers**
 Experimentally validated human enhancers from VISTA (http://enhancer.lbl.gov/frnt_page_n.shtml)
 
-*  **ENCODE information**
+
+**ENCODE information**
+----------------------
 
 **encode_tfbs**
 Comma-separated list of transcription factors that were observed by ENCODE to bind DNA in this region. Each hit in the list is constructed as TF_CELLCOUNT, where: TF is the transcription factor name, CELLCOUNT is the number of cells tested that had nonzero signals.
@@ -665,7 +680,8 @@ ENCODE consensus segmentation prediction for HuVEC.
 ENCODE consensus segmentation prediction for k562.
 
 
-*  **Cancer related columns**
+**Cancer related columns**
+--------------------------
 
 **COSMIC_ID**
 A list of known COSMIC ids for this variant.
@@ -674,7 +690,8 @@ A list of known COSMIC ids for this variant.
 The count of known COSMIC ids for this variant.
 
 
-*  **HGVS nomenclature**
+**HGVS nomenclature**
+---------------------
 **vep_hgvsc**
 Human Genome Variation Sequence c-syntax nomenclature (from VEP)
 

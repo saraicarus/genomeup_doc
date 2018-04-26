@@ -2,7 +2,7 @@ Variants annotation fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 General variant information
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **chrom**
 The chromosome on which the variant resides (from VCF CHROM field).
@@ -42,7 +42,7 @@ Variant transcript number for the most severely affected transcript [capire se s
 
 
 Structural variation columns
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **sv_cipos_start_left**
 The leftmost position of the leftmost SV breakpoint confidence interval.
@@ -80,7 +80,10 @@ The orientations of the SV breakpoint(s).
 **call_rate**
 The fraction of samples with a valid genotype.
 
-* **NCBI information**
+
+NCBI information
+~~~~~~~~~~~~~~~~
+
 **in_dbsnp**
 Absence (0) or presence (1) of the variant in dbsnp
 
@@ -89,7 +92,7 @@ A comma-separated list of rs ids for variants present in dbSNP
 
 
 Clinical information
-------------------------
+~~~~~~~~~~~~~~~~~~~~
 
 **clinvar_sig**
 The clinical significance scores for each of the variant according to ClinVar: unknown, untested, non-pathogenic, probable-non-pathogenic,probable-pathogenic, pathogenic, drug-response, histocompatibility, other
@@ -258,7 +261,7 @@ Severity of the highest order observed for the variant
 
 
 Function predictor
-----------------------
+~~~~~~~~~~~~~~~~~~
 
 **Polyphen2_HDIV_score_dbNSFP**
 Polyphen2 score based on HumDiv, i.e. hdiv_prob. The score ranges from 0 to 1. Multiple entries separated by ";"
@@ -376,7 +379,7 @@ Estimated nonsynonymous-to-synonymous-rate ratio (Omega, reported by LRT)
 
 
 Conservation scores
------------------------
+~~~~~~~~~~~~~~~~~~~
 
 **CADD_raw_dbNSFP** 
 Combined annotation dependent depletion prediction: higher values are more deleterious.
@@ -508,7 +511,7 @@ Whether a SNP is on the Illumina HumanExome Chip
 
 
 Population information
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 **max_aaf_all**
 The maximum of aaf_gnomad{afr,amr,eas,nfe,sas},aaf_esp_ea, aaf_esp_aa, aaf_1kg_amr, aaf_1kg_eas,aaf_1kg_sas,aaf_1kg_afr,aaf_1kg_eur,aaf_adj_exac_afr,aaf_adj_exac_amr,aaf_adj_exac_eas,aaf_adj_exac_nfe,aaf_adj_exac_sas. and -1 if none of those databases/populations contain the variant.
@@ -650,7 +653,7 @@ Experimentally validated human enhancers from VISTA (http://enhancer.lbl.gov/frn
 
 
 ENCODE information
-----------------------
+~~~~~~~~~~~~~~~~~~
 
 **encode_tfbs**
 Comma-separated list of transcription factors that were observed by ENCODE to bind DNA in this region. Each hit in the list is constructed as TF_CELLCOUNT, where: TF is the transcription factor name, CELLCOUNT is the number of cells tested that had nonzero signals.
@@ -681,7 +684,7 @@ ENCODE consensus segmentation prediction for k562.
 
 
 Cancer related columns
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 **COSMIC_ID**
 A list of known COSMIC ids for this variant.
@@ -691,7 +694,7 @@ The count of known COSMIC ids for this variant.
 
 
 HGVS nomenclature
----------------------
+~~~~~~~~~~~~~~~~~
 **vep_hgvsc**
 Human Genome Variation Sequence c-syntax nomenclature (from VEP)
 

@@ -89,7 +89,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-        'logo':'$PROJECT/static/requests-sidebar.png'
+        'logo':'$PROJECT/static/logo.png'
         }
 
 # Add any paths that contain custom static files (such as style sheets) here,

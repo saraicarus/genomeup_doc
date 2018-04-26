@@ -1,0 +1,596 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Variants annotation fields &#8212; doc 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="GenomeUp documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="variants-annotation-fields">
+<h1>Variants annotation fields<a class="headerlink" href="#variants-annotation-fields" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-variant-information">
+<h2>General variant information<a class="headerlink" href="#general-variant-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>chrom</strong>
+The chromosome on which the variant resides (from VCF CHROM field).</p>
+<p><strong>start(1-coor)</strong>
+Physical position on the chromosome as to hg19 (1-based coordinate)</p>
+<p><strong>end</strong>
+The 1-based end position. (from VCF POS field, yet inferred based on the size of the variant)</p>
+<p><strong>vcf_id</strong>
+The VCF IDfield.</p>
+<p><strong>ref</strong>
+Reference allele (from VCF REF field).</p>
+<p><strong>alt</strong>
+Alternate allele for the variant (from VCF ALT field).</p>
+<p><strong>qual</strong>
+Quality score for the assertion made in ALT (from VCF QUAL field).</p>
+<p><strong>filter</strong>
+A string of filters passed/failed in variant calling (from VCF FILTER field)</p>
+<p><strong>type</strong>
+The type of variant  [snp, indel] .</p>
+<p><strong>sub_type</strong>
+The variant sub-type. If type is snp: [ts, (transition), tv (transversion)]. If type is indel: [ins, (insertion), del (deletion)].</p>
+<p><strong>vcf_id</strong>
+The VCF IDfield.</p>
+<p><strong>anno_id</strong>
+Variant transcript number for the most severely affected transcript [capire se serve]</p>
+</div>
+<div class="section" id="structural-variation-columns">
+<h2>Structural variation columns<a class="headerlink" href="#structural-variation-columns" title="Permalink to this headline">¶</a></h2>
+<p><strong>sv_cipos_start_left</strong>
+The leftmost position of the leftmost SV breakpoint confidence interval.</p>
+<p><strong>sv_cipos_end_left</strong>
+The rightmost position of the leftmost SV breakpoint confidence interval.</p>
+<p><strong>sv_cipos_start_right</strong>
+The leftmost position of the rightmost SV breakpoint confidence interval.</p>
+<p><strong>sv_cipos_end_right</strong>
+The rightmost position of the rightmost SV breakpoint confidence interval.</p>
+<p><strong>sv_length</strong>
+The length of the structural variant in base pairs.</p>
+<p><strong>sv_is_precise</strong>
+Is the structural variant precise (i.e., to 1-bp resolution)?</p>
+<p><strong>sv_tool</strong>
+The name of the SV discovery tool used to find the SV.</p>
+<p><strong>sv_evidence_type</strong>
+What type of alignment evidence supports the SV?</p>
+<p><strong>sv_event_id</strong>
+A unique identifier for the SV.</p>
+<p><strong>sv_mate_id</strong>
+The ID for the “other end” of the SV.</p>
+<p><strong>sv_strand</strong>
+The orientations of the SV breakpoint(s).</p>
+<p><strong>call_rate</strong>
+The fraction of samples with a valid genotype.</p>
+</div>
+<div class="section" id="ncbi-information">
+<h2>NCBI information<a class="headerlink" href="#ncbi-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>in_dbsnp</strong>
+Absence (0) or presence (1) of the variant in dbsnp</p>
+<p><strong>rs_ids</strong>
+A comma-separated list of rs ids for variants present in dbSNP</p>
+</div>
+<div class="section" id="clinical-information">
+<h2>Clinical information<a class="headerlink" href="#clinical-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>clinvar_sig</strong>
+The clinical significance scores for each of the variant according to ClinVar: unknown, untested, non-pathogenic, probable-non-pathogenic,probable-pathogenic, pathogenic, drug-response, histocompatibility, other</p>
+<p><strong>clinvar_disease_name</strong>
+The name of the disease to which the variant is relevant</p>
+<p><strong>clinvar_dbsource</strong>
+Variant Clinical Channel IDs</p>
+<p><strong>clinvar_dbsource_id</strong>
+The record id in the above database</p>
+<p><strong>clinvar_origin</strong>
+The type of variant: unknown,&nbsp;germline,&nbsp;somatic, inherited,&nbsp;paternal,&nbsp;maternal, de-novo,&nbsp;biparental,&nbsp;uniparental, not-tested,&nbsp;tested-inconclusive, other</p>
+<p><strong>clinvar_dsdb</strong>
+Variant disease database name</p>
+<p><strong>clinvar_dsdbid</strong>
+Variant disease database ID</p>
+<p><strong>clinvar_disease_acc</strong>
+Variant Accession and Versions</p>
+<p><strong>clinvar_in_locus_spec_db</strong>
+Submitted from a locus-specific database?</p>
+<p><strong>clinvar_on_diag_assay</strong>
+Variation is interrogated in a clinical diagnostic assay?</p>
+<p><strong>clinvar_causal_allele</strong>
+The allele(s) that are associated or causal for the disease.</p>
+<p><strong>clinvar_gene_phenotype</strong>
+‘,’ delimited list of phenotypes associated with this gene (includes any variant in the same gene in clinvar not just the current variant).</p>
+<p><strong>in_omim</strong>
+Absence (0) or presence (1) of the variant in OMIM database</p>
+<p><strong>uniprot_acc</strong>
+Uniprot accession number. Multiple entries separated by “;”</p>
+<p><strong>uniprot_id</strong>
+Uniprot ID number. Multiple entries separated by “;”</p>
+<p><strong>uniprot_aapos</strong>
+Amino acid position as to Uniprot. Multiple entries separated by “;”</p>
+<p><strong>geno2mp_hpo_ct</strong>
+Value from geno2mp indicating count of HPO profiles. Set to -1 if missing</p>
+<p><strong>pfam_domain</strong>
+Pfam protein domain that the variant affects</p>
+<p><strong>interpro_domain</strong>
+Domain annotations come from Interpro database. The number in the brackets following a specific domain is the count of times Interpro assigns the variant position to that domain, typically coming from different predicting databases. Multiple entries separated by “;”.</p>
+<p><strong>fold_degenerate</strong>
+Degenerate type (0, 2 or 3)</p>
+<p><strong>cyto_band</strong>
+Chromosomal cytobands that a variant overlaps</p>
+<p><strong>rmsk</strong>
+A comma-separated list of RepeatMasker annotations that the variant overlaps. Each hit is of the form:&nbsp;name_class_family</p>
+<p><strong>in_cpg_island</strong>
+Does the variant overlap a CpG island?. Based on UCSC: Regulation &gt; CpG Islands &gt; cpgIslandExt</p>
+<p><strong>in_segdup</strong>
+Does the variant overlap a segmental duplication?. Based on UCSC: Variation&amp;Repeats &gt; Segmental Dups &gt; genomicSuperDups track</p>
+<p><strong>is_conserved</strong>
+Does the variant overlap a conserved region? Based on the 29-way mammalian conservation study.</p>
+<p><strong>gerp_bp_score</strong>
+GERP conservation score. Higher scores reflect greater conservation.&nbsp;At base-pair resolution.</p>
+<p><strong>gerp_element_pval</strong>
+GERP elements P-val. Lower P-values scores reflect greater conservation.&nbsp;Not at base-pair resolution.</p>
+<p><strong>num_hom_ref</strong>
+The total number of of homozygotes for the reference (ref) allele</p>
+<p><strong>num_het</strong>
+The total number of heterozygotes observed.</p>
+<p><strong>num_hom_alt</strong>
+The total number of homozygotes for the reference (alt) allele</p>
+<p><strong>num_unknown</strong>
+The total number of unknown genotypes</p>
+<p><strong>aaf</strong>
+The observed allele frequency for the alternate allele</p>
+<p><strong>hwe</strong>
+The Chi-square probability of deviation from HWE (assumes random mating)</p>
+<p><strong>inbreeding_coeff</strong>
+The inbreeding co-efficient that expresses the likelihood of effects due to inbreeding</p>
+<p><strong>pi</strong>
+The computed nucleotide diversity (pi) for the site</p>
+<p><strong>recomb_rate</strong>
+Returns the mean recombination rate at the variant site. Based on HapMapII_GRCh37 genetic map</p>
+<p><strong>gene</strong>
+Corresponding gene name of the highly affected transcript</p>
+<p><strong>transcript</strong>
+The variant transcript that was most severely affected. (for two equally affected transcripts, the protein_coding biotype is prioritized (SnpEff/VEP)</p>
+<p><strong>is_exonic</strong>
+Does the variant affect an exon for &gt;= 1 transcript?</p>
+<p><strong>is_coding</strong>
+Does the variant fall in a coding region (excl. 3’ &amp; 5’ UTRs) for &gt;= 1 transcript?</p>
+<p><strong>is_splicing</strong>
+Does the variant affect a canonical or possible splice site? That is, set to TRUE if the SO term is any of&nbsp;splice_acceptor_variant,&nbsp;splice_donor_variant, or&nbsp;splice_region_variant.</p>
+<p><strong>is_lof</strong>
+Based on the value of the impact col, is the variant LOF for &gt;= transcript?</p>
+<p><strong>exon</strong>
+Exon information for the severely affected transcript</p>
+<p><strong>aaf</strong>
+The observed allele frequency for the alternate allele</p>
+<p><strong>codon_change</strong>
+What is the codon change?</p>
+<p><strong>aa_change</strong>
+What is the amino acid change (for a snp)?</p>
+<p><strong>aa_length</strong>
+Has the format pos/len when biotype=protein_coding, is empty otherwise. len=protein length. pos = position of the amino acid change when is_coding=1 and is_exonic=1, ‘-‘ otherwise.</p>
+<p><strong>aaalt</strong>
+Alternative amino acid. “.” if the variant is a splicing site SNP (2bp on each end of an intron)</p>
+<p><strong>aaref</strong>
+Reference amino acid. “.” if the variant is a splicing site SNP (2bp on each end of an intron)</p>
+<p><strong>aapos_SIFT</strong>
+ENSP id and amino acid positions corresponding to SIFT scores. Multiple entries separated by “;”</p>
+<p><strong>aapos_FATHMM</strong>
+ENSP id and amino acid positions corresponding to FATHMM scores. Multiple entries separated by “;”</p>
+<p><strong>biotype</strong>
+The ‘type’ of the severely affected transcript (e.g., protein-coding, pseudogene, rRNA etc.) (only&nbsp;SnpEff)</p>
+<p><strong>impact</strong>
+The consequence of the most severely affected transcript</p>
+<p><strong>impact_so</strong>
+The Sequence ontology term for the most severe consequence</p>
+<p><strong>impact_severity</strong>
+Severity of the highest order observed for the variant</p>
+</div>
+<div class="section" id="function-predictor">
+<h2>Function predictor<a class="headerlink" href="#function-predictor" title="Permalink to this headline">¶</a></h2>
+<p><strong>Polyphen2_HDIV_score_dbNSFP</strong>
+Polyphen2 score based on HumDiv, i.e. hdiv_prob. The score ranges from 0 to 1. Multiple entries separated by “;”</p>
+<p><strong>Polyphen2_HDIV_rankscore_dbNSFP</strong>
+Polyphen2 HDIV scores were first ranked among all HDIV scores in dbNSFP. The rankscore is the ratio of the rank the score over the total number of the scores in dbNSFP. If there are multiple scores, only the most damaging (largest) rankscore is presented. The scores range from 0.02656 to 0.89917</p>
+<p><strong>Polyphen2_HDIV_pred_dbNSFP</strong>
+Polyphen2 prediction based on HumDiv</p>
+<p><strong>Polyphen2_HVAR_score_dbNSFP</strong>
+Polyphen2 score based on HumVar, i.e. hvar_prob. The score ranges from 0 to 1. Multiple entries separated by “;”</p>
+<p><strong>Polyphen2_HVAR_rankscore_dbNSFP</strong>
+Polyphen2 HVAR scores were first ranked among all HVAR scores in dbNSFP. The rankscore is the ratio of the rank the score over the total number of the scores in dbNSFP. If there are multiple scores, only the most damaging (largest) rankscore is presented. The scores range from 0.01281 to 0.9711</p>
+<p><strong>Polyphen2_HVAR_pred_dbNSFP</strong>
+Polyphen2 prediction based on HumVar</p>
+<p><strong>sift_pred</strong>
+SIFT predictions for the snp’s for the most severely affected transcript (only&nbsp;VEP)</p>
+<p><strong>sift_score</strong>
+SIFT scores for the predictions (only&nbsp;VEP)</p>
+<p><strong>SIFT_score_dbNSFP</strong>
+SIFT score (SIFTori). Scores range from 0 to 1. The smaller the score the more likely the SNP has damaging effect. Multiple scores separated by “;”</p>
+<p><strong>SIFT_pred_dbNSFP</strong>
+If SIFTori is smaller than 0.05 (rankscore&gt;0.55) the corresponding non-synonymous SNP is predicted as “D(amaging)”; otherwise it is predicted as “T(olerated)”. Multiple predictions separated by “;”</p>
+<p><strong>SIFT_converted_rankscore_dbNSFP</strong>
+SIFTori scores were first converted to SIFTnew=1-SIFTori, then ranked among all SIFTnew scores in dbNSFP. The rankscore is the ratio of the rank the SIFTnew score over the total number of SIFTnew scores in dbNSFP. If there are multiple scores, only the most damaging (largest) rankscore is presented. The rankscores range from 0.02654 to 0.87932</p>
+<p><strong>LRT_score</strong>
+Our logistic regression (LR) based ensemble prediction score, which incorporated 10 scores (SIFT, PolyPhen-2 HDIV, PolyPhen-2 HVAR, GERP++, MutationTaster, Mutation Assessor, FATHMM, LRT, SiPhy, PhyloP) and the maximum frequency observed in the 1000 genomes populations. Larger value means the SNV is more likely to be damaging. Scores range from 0 to 1</p>
+<p><strong>LRT_rankscore</strong>
+LR scores were ranked among all LR scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of LR scores in dbNSFP. The scores range from 0 to 1</p>
+<p><strong>LRT_pred</strong>
+Prediction of our LR based ensemble prediction score, “T(olerated)” or “D(amaging)”. The score cutoff between “D” and “T” is 0.5. The rankscore cutoff between “D” and “T” is 0.82268</p>
+<p><strong>MutationAssessor_score</strong>
+MutationAssessor functional impact combined score (MAori)</p>
+<p><strong>MutationAssessor_rankscore</strong>
+MAori scores were ranked among all MAori scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of MAori scores in dbNSFP. The scores range from 0 to 1</p>
+<p><strong>MutationAssessor_pred</strong>
+MutationAssessor’s functional impact of a variant</p>
+<p><strong>MutationTaster_score</strong>
+MutationTaster p-value (MTori), ranges from 0 to 1</p>
+<p><strong>MutationTaster_converted_rankscore</strong>
+The MTori scores were first converted: if the prediction is “A” or “D” MTnew=MTori; if the prediction is “N” or “P”, MTnew=1-MTori. Then MTnew scores were ranked among all MTnew scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of MTnew scores in dbNSFP. The scores range from 0.0931 to 0.80722</p>
+<p><strong>MutationTaster_pred</strong>
+MutationTaster prediction</p>
+<p><strong>FATHMM_score</strong>
+FATHMM default score (FATHMMori)</p>
+<p><strong>FATHMM_rankscore</strong>
+FATHMMori scores were ranked among all FATHMMori scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of FATHMMori scores in dbNSFP. If there are multiple scores, only the most damaging (largest) rankscore is presented. The scores range from 0 to 1</p>
+<p><strong>FATHMM_pred</strong>
+If a FATHMM_score is &lt;=-1.5 (or rankscore &lt;=0.81415) the corresponding non-synonymous SNP is predicted as “D(AMAGING)”; otherwise it is predicted as “T(OLERATED)”. Multiple predictions separated by “;”</p>
+<p><strong>MetaSVM_score</strong>
+Our support vector machine (SVM) based ensemble prediction score, which incorporated 10 scores (SIFT, PolyPhen-2 HDIV, PolyPhen-2 HVAR, GERP++, MutationTaster, Mutation Assessor, FATHMM, LRT, SiPhy, PhyloP) and the maximum frequency observed in the 1000 genomes populations. Larger value means the SNV is more likely to be damaging.
+Scores range from -2 to 3 in dbNSFP</p>
+<p><strong>MetaSVM_rankscore</strong>
+MetaSVM scores were ranked among all MetaSVM scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of MetaSVM
+scores in dbNSFP. The scores range from 0 to 1.</p>
+<p><strong>MetaSVM_pred</strong>
+Prediction of our SVM (radial kernel support vector) machine based ensemble prediction score, “T(olerated)” or “D(amaging)”. The score cutoff between “D” and “T” is 0. The rankscore cutoff between “D” and “T” is 0.83357</p>
+<p><strong>MetaLR_score</strong>
+Our logistic regression (LR) based ensemble prediction score, which incorporated 10 scores (SIFT, PolyPhen-2 HDIV, PolyPhen-2 HVAR, GERP++, MutationTaster, Mutation Assessor, FATHMM, LRT, SiPhy, PhyloP) and the maximum frequency observed in the 1000 genomes populations. Larger value means the SNV is more likely to be damaging. Scores range from 0 to 1</p>
+<p><strong>MetaLR_rankscore</strong>
+LR scores were ranked among all LR scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of LR scores in dbNSFP. The scores range from 0 to 1</p>
+<p><strong>MetaLR_pred</strong>
+Prediction of our LR based ensemble prediction score, “T(olerated)” or “D(amaging)”. The score cutoff between “D” and “T” is 0.5. The rankscore cutoff between “D” and “T” is 0.82268</p>
+<p><strong>VEST3_score</strong>
+VEST 3.0 score. Score ranges from 0 to 1. The larger the score the more likely the mutation may cause functional change. Multiple scores separated by “;”, corresponding to Transcript_id_VEST3. Please note this score is free for non-commercial use. For more details please refer to <a class="reference external" href="http://wiki.chasmsoftware.org/index.php/SoftwareLicense">http://wiki.chasmsoftware.org/index.php/SoftwareLicense</a>.</p>
+<p><strong>VEST3_rankscore</strong>
+VEST3 scores were ranked among all VEST3 scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of VEST3 scores in dbNSFP. In case there are multiple scores for the same variant, the largest score (most damaging) is presented. The scores range from 0 to 1.</p>
+<p><strong>VEST3_pred</strong>
+Variant Effect Scoring Tool version 3 prediction.</p>
+<p><strong>PROVEAN_score</strong>
+Protein Variation Effect Analyzer with clustering of homologus  sequences method. Scores range from -14 to 14. The smaller the score the more likely the SNP has damaging effect.</p>
+<p><strong>PROVEAN_converted_rankscore</strong>
+PROVEANori were first converted to PROVEANnew=1-(PROVEANori+14)/28, then ranked among all PROVEANnew scores in dbNSFP. The rankscore is the ratio of the rank the PROVEANnew score over the total number of PROVEANnew scores in dbNSFP. If there are multiple scores, only the most damaging (largest) rankscore is presented.
+The scores range from 0 to 1.</p>
+<p><strong>PROVEAN_pred</strong>
+If PROVEANori &lt;= -2.5 (rankscore&gt;=0.543) the corresponding nsSNV is predicted as “D(amaging)”; otherwise it is predicted as “N(eutral)”. Multiple predictions separated by “;”, corresponding to Ensembl_proteinid.</p>
+<p><strong>Reliability_index</strong>
+Number of observed component scores (except the maximum frequency in the 1000 genomes populations) for RadialSVM and LR. Ranges from 1 to 10. As RadialSVM and LR scores are calculated based on imputed data, the less missing component scores, the higher the reliability of the scores and predictions</p>
+<p><strong>LRT_Omega</strong>
+Estimated nonsynonymous-to-synonymous-rate ratio (Omega, reported by LRT)</p>
+</div>
+<div class="section" id="conservation-scores">
+<h2>Conservation scores<a class="headerlink" href="#conservation-scores" title="Permalink to this headline">¶</a></h2>
+<p><strong>CADD_raw_dbNSFP</strong>
+Combined annotation dependent depletion prediction: higher values are more deleterious.</p>
+<p><strong>CADD_raw_rankscore_dbNSFP</strong>
+CADD raw scores were ranked among all CADD raw scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of CADD raw scores in dbNSFP.</p>
+<p><strong>CADD_phred_dbNSFP</strong>
+CADD phred-like score. This is phred-like rank score based on whole genome CADD raw scores.</p>
+<p><strong>GERPpp_NR</strong>
+GERP++ neutral rate</p>
+<p><strong>GERPpp_RS</strong>
+GERP++ RS score, the larger the score, the more conserved the site</p>
+<p><strong>GERPpp_RS_rankscore</strong>
+GERP++ RS scores were ranked among all GERP++ RS scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of GERP++ RS scores in dbNSFP</p>
+<p><strong>phyloP46way_primate</strong>
+phyloP (phylogenetic p-values) conservation score based on the multiple alignments of 10 primate genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phyloP46way_primate_rankscore</strong>
+phyloP46way_primate scores were ranked among all phyloP46way_primate scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phyloP46way_primate scores in dbNSFP</p>
+<p><strong>phyloP46way_placental</strong>
+phyloP (phylogenetic p-values) conservation score based on the multiple alignments of 33 placental mammal genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phyloP46way_placental_rankscore</strong>
+phyloP46way_placental scores were ranked among all phyloP46way_placental scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phyloP46way_placental scores in dbNSFP</p>
+<p><strong>phyloP100way_vertebrate</strong>
+phyloP (phylogenetic p-values) conservation score based on the multiple alignments of 100 vertebrate genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phyloP100way_vertebrate_rankscore</strong>
+phyloP100way_vertebrate scores were ranked among all phyloP100way_vertebrate scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phyloP100way_vertebrate scores in dbNSFP</p>
+<p><strong>phastConsP46way_primate</strong>
+phyloP (phylogenetic p-values) conservation score based on the multiple alignments of 10 primate genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phastConsP46way_primate_rankscore</strong>
+phyloP46way_primate scores were ranked among all phyloP46way_primate scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phyloP46way_primate scores in dbNSFP</p>
+<p><strong>phastConsP46way_placental</strong>
+phastCons conservation score based on the multiple alignments of 33 placental mammal genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phastConsP46way_placental_rankscore</strong>
+phastCons46way_placental scores were ranked among all phastCons46way_placental scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phastCons46way_placental scores in dbNSFP</p>
+<p><strong>phastConsP100way_vertebrate</strong>
+phastCons conservation score based on the multiple alignments of 100 vertebrate genomes (including human). The larger the score, the more conserved the site</p>
+<p><strong>phastConsP100way_vertebrate_rankscore</strong>
+phastCons100way_vertebrate scores were ranked among all phastCons100way_vertebrate scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of phastCons100way_vertebrate scores in dbNSFP</p>
+<p><strong>SiPhy_29way_pi</strong>
+The estimated stationary distribution of A, C, G and T at the site, using SiPhy algorithm based on 29 mammals genomes</p>
+<p><strong>SiPhy_29way_logOdds</strong>
+SiPhy score based on 29 mammals genomes. The larger the score, the more conserved the site</p>
+<p><strong>SiPhy_29way_logOdds_rankscore</strong>
+SiPhy_29way_logOdds scores were ranked among all SiPhy_29way_logOdds scores in dbNSFP. The rankscore is the ratio of the rank of the score over the total number of SiPhy_29way_logOdds scores in dbNSFP</p>
+<p><strong>fitcons</strong>
+fitCons scores estimating the probability that a point mutation at each position in a genome will influence fitness. Higher scores have more potential for interesting genomic function. Common ranges: 0.05-0.35 for non-coding and 0.4-0.8 for coding</p>
+<p><strong>UniSNP_ids</strong>
+rs numbers from UniSNP, which is a cleaned version of dbSNP build 129, in format: rs number1;rs number2;…</p>
+<p><strong>ancestral_allele</strong>
+Ancestral allele (based on 1000 genomes reference data)</p>
+<p><strong>rms_bq</strong>
+The RMS base quality at this position.</p>
+<p><strong>cigar</strong>
+CIGAR string describing how to align an alternate allele to the reference allele.
+depth
+The number of aligned sequence reads that led to this variant call</p>
+<p><strong>strand_bias</strong>
+Strand bias at the variant position. From the “SB” tag.</p>
+<p><strong>rms_map_qual</strong>
+RMS mapping quality, a measure of variance of quality scores</p>
+<p><strong>in_hom_run</strong>
+Homopolymer runs for the variant allele</p>
+<p><strong>num_mapq_zero</strong>
+Total counts of reads with mapping quality equal to zero</p>
+<p><strong>num_alleles</strong>
+Total number of alleles in called genotypes</p>
+<p><strong>num_reads_w_dels</strong>
+Fraction of reads with spanning deletions</p>
+<p><strong>haplotype_score</strong>
+Consistency of the site with two segregating haplotypes</p>
+<p><strong>qual_depth</strong>
+Variant confidence or quality by depth</p>
+<p><strong>allele_count</strong>
+Allele counts in genotypes</p>
+<p><strong>allele_bal</strong>
+Allele balance for hets</p>
+<p><strong>in_hm2</strong>
+Whether the variant was part of HapMap2.</p>
+<p><strong>in_hm3</strong>
+Whether the variant was part of HapMap3.</p>
+<p><strong>is_somatic</strong>
+Whether the variant is somatically acquired.</p>
+<p><strong>somatic_score</strong>
+A score for</p>
+<p><strong>in_esp</strong>
+Presence/absence of the variant in the ESP project data</p>
+<p><strong>exome_chip</strong>
+Whether a SNP is on the Illumina HumanExome Chip</p>
+</div>
+<div class="section" id="population-information">
+<h2>Population information<a class="headerlink" href="#population-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>max_aaf_all</strong>
+The maximum of aaf_gnomad{afr,amr,eas,nfe,sas},aaf_esp_ea, aaf_esp_aa, aaf_1kg_amr, aaf_1kg_eas,aaf_1kg_sas,aaf_1kg_afr,aaf_1kg_eur,aaf_adj_exac_afr,aaf_adj_exac_amr,aaf_adj_exac_eas,aaf_adj_exac_nfe,aaf_adj_exac_sas. and -1 if none of those databases/populations contain the variant.</p>
+<p><strong>aaf_esp_ea</strong>
+Minor Allele Frequency of the variant for European Americans in the ESP project</p>
+<p><strong>aaf_esp_aa</strong>
+Minor Allele Frequency of the variant for African Americans in the ESP project</p>
+<p><strong>aaf_esp_all</strong>
+Minor Allele Frequency of the variant w.r.t both groups in the ESP project</p>
+<p><strong>in_1kg</strong>
+Presence/absence of the variant in the 1000 genome project data (phase 3)</p>
+<p><strong>aaf_1kg_amr</strong>
+Allele frequency of the variant in AMR population based on AC/AN (1000g project, phase 3)</p>
+<p><strong>aaf_1kg_eas</strong>
+Allele frequency of the variant in EAS population based on AC/AN (1000g project, phase 3)</p>
+<p><strong>aaf_1kg_sas</strong>
+Allele frequency of the variant in SAS population based on AC/AN (1000g project, phase 3)</p>
+<p><strong>aaf_1kg_afr</strong>
+Allele frequency of the variant in AFR population based on AC/AN (1000g project, phase 3)</p>
+<p><strong>aaf_1kg_eur</strong>
+Allele frequency of the variant in EUR population based on AC/AN (1000g project, phase 3)</p>
+<p><strong>aaf_1kg_all</strong>
+Global allele frequency (based on AC/AN) (1000g project - phase 3)</p>
+<p><strong>ARIC5606_AA_AC</strong>
+Alternative allele counts in 2403 exomes of African Americans from the Atherosclerosis Risk in Communities Study (ARIC) cohort study.</p>
+<p><strong>ARIC5606_AA_AF</strong>
+Alternative allele frequency of 2403 exomes of African Americans from the Atherosclerosis Risk in Communities Study (ARIC) cohort study.</p>
+<p><strong>ARIC5606_EA_AC</strong>
+Alternative allele counts in 3203 exomes of European Americans from the Atherosclerosis Risk in Communities Study (ARIC) cohort study.</p>
+<p><strong>ARIC5606_EA_AF</strong>
+Alternative allele frequency of 3203 exomes of European Americans from the Atherosclerosis Risk in Communities Study (ARIC) cohort study.</p>
+<p><strong>in_exac</strong>
+Presence/absence of the variant in ExAC (Exome Aggregation Consortium) data (Broad)</p>
+<p><strong>aaf_exac_all</strong>
+Raw allele frequency (population independent) of the variant based on ExAC exomes (AF)</p>
+<p><strong>aaf_adj_exac_all</strong>
+Adjusted allele frequency (population independent) of the variant based on ExAC (Adj_AC/Adj_AN)</p>
+<p><strong>aaf_adj_exac_afr</strong>
+Adjusted allele frequency of the variant for AFR population in ExAC (AC_AFR/AN_AFR)</p>
+<p><strong>aaf_adj_exac_amr</strong>
+Adjusted allele frequency of the variant for AMR population in ExAC (AC_AMR/AN_AMR)</p>
+<p><strong>aaf_adj_exac_eas</strong>
+Adjusted allele frequency of the variant for EAS population in ExAC (AC_EAS/AN_EAS)</p>
+<p><strong>aaf_adj_exac_fin</strong>
+Adjusted allele frequency of the variant for FIN population in ExAC (AC_FIN/AN_FIN)</p>
+<p><strong>aaf_adj_exac_nfe</strong>
+Adjusted allele frequency of the variant for NFE population in ExAC (AC_NFE/AN_NFE)</p>
+<p><strong>aaf_adj_exac_oth</strong>
+Adjusted allele frequency of the variant for OTH population in ExAC (AC_OTH/AN_OTH)</p>
+<p><strong>aaf_adj_exac_sas</strong>
+Adjusted allele frequency of the variant for SAS population in ExAC (AC_SAS/AN_SAS)</p>
+<p><strong>exac_num_het</strong>
+The number of heterozygote genotypes observed in ExAC. Pulled from the ExAC&nbsp;AC_Het&nbsp;INFO field.</p>
+<p><strong>exac_num_hom_alt</strong>
+The number of homozygous alt. genotypes observed in ExAC. Pulled from the ExAC&nbsp;AC_Het&nbsp;INFO field.</p>
+<p><strong>exac_num_chroms</strong>
+The number of chromosomes underlying the ExAC variant call. Pulled from the ExAC&nbsp;AN_Adj&nbsp;INFO field.</p>
+<p><strong>aaf_gnomad_all</strong>
+Allele frequency (population independent) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_afr</strong>
+Allele frequency (AFR population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_amr</strong>
+Allele frequency (AMR population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_asj</strong>
+Allele frequency (ASJ population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_eas</strong>
+Allele frequency (EAS population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_fin</strong>
+Allele frequency (FIN population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_nfe</strong>
+Allele frequency (NFE population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_oth</strong>
+Allele frequency (OTH population) of the variant in gnomad</p>
+<p><strong>aaf_gnomad_sas</strong>
+Allele frequency (SAS population) of the variant in gnomad</p>
+<p><strong>gnomad_num_het</strong>
+Number of het genotypes observed in gnomad</p>
+<p><strong>gnomad_num_hom_alt</strong>
+Number of hom_alt genotypes observed in gnomad</p>
+<p><strong>gnomad_num_chroms</strong>
+Number of chromosomes genotyped in gnomad</p>
+<p><strong>grc</strong>
+Association with patch and fix regions from the Genome Reference Consortium: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/">http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/</a> Identifies potential problem regions associated with variant calls.</p>
+<p><strong>gms_illumina</strong>
+Genome Mappability Scores (GMS) for Illumina error models. Provides low GMS scores (&lt; 25.0 in any technology) from: <a class="reference external" href="http://sourceforge.net/apps/mediawiki/gma-bio/index.php?title=Download_GMS">http://sourceforge.net/apps/mediawiki/gma-bio/index.php?title=Download_GMS</a></p>
+<p><strong>gms_solid</strong>
+Genome Mappability Scores with SOLiD error models</p>
+<p><strong>gms_iontorrent</strong>
+Genome Mappability Scores with IonTorrent error models</p>
+<p><strong>in_cse</strong>
+Is a variant in an error prone genomic position, using CSE: Context-Specific Sequencing Errors</p>
+<p><strong>vista_enhancers</strong>
+Experimentally validated human enhancers from VISTA (<a class="reference external" href="http://enhancer.lbl.gov/frnt_page_n.shtml">http://enhancer.lbl.gov/frnt_page_n.shtml</a>)</p>
+</div>
+<div class="section" id="encode-information">
+<h2>ENCODE information<a class="headerlink" href="#encode-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>encode_tfbs</strong>
+Comma-separated list of transcription factors that were observed by ENCODE to bind DNA in this region. Each hit in the list is constructed as TF_CELLCOUNT, where: TF&nbsp;is the transcription factor name, CELLCOUNT&nbsp;is the number of cells tested that had nonzero signals.</p>
+<p><strong>encode_dnaseI_cell_count</strong>
+Count of cell types that were observed to have DnaseI hypersensitivity.</p>
+<p><strong>encode_dnaseI_cell_list</strong>
+Comma separated list of cell types that were observed to have DnaseI&nbsp;hypersensitivity. Provenance: Thurman, et al,&nbsp;Nature, 489, pp. 75-82, 5 Sep. 2012</p>
+<p><strong>encode_consensus_gm12878</strong>
+ENCODE consensus segmentation prediction for GM12878. CTCF: CTCF-enriched element; E: Predicted enhancer; PF: Predicted promoter flanking region; R: Predicted repressed or low-activity region; TSS: Predicted promoter region including TSS; T: Predicted transcribed region; WE: Predicted weak enhancer or open chromatin cis-regulatory element | unknown: This region of the genome had no functional prediction.</p>
+<p><strong>encode_consensus_h1hesc</strong>
+ENCODE consensus segmentation prediction for h1HESC.</p>
+<p><strong>encode_consensus_helas3</strong>
+ENCODE consensus segmentation prediction for Helas3.</p>
+<p><strong>encode_consensus_hepg2</strong>
+ENCODE consensus segmentation prediction for HEPG2.</p>
+<p><strong>encode_consensus_huvec</strong>
+ENCODE consensus segmentation prediction for HuVEC.</p>
+<p><strong>encode_consensus_k562</strong>
+ENCODE consensus segmentation prediction for k562.</p>
+</div>
+<div class="section" id="cancer-related-columns">
+<h2>Cancer related columns<a class="headerlink" href="#cancer-related-columns" title="Permalink to this headline">¶</a></h2>
+<p><strong>COSMIC_ID</strong>
+A list of known COSMIC ids for this variant.</p>
+<p><strong>COSMIC_CNT</strong>
+The count of known COSMIC ids for this variant.</p>
+</div>
+<div class="section" id="hgvs-nomenclature">
+<h2>HGVS nomenclature<a class="headerlink" href="#hgvs-nomenclature" title="Permalink to this headline">¶</a></h2>
+<p><strong>vep_hgvsc</strong>
+Human Genome Variation Sequence c-syntax nomenclature (from VEP)</p>
+<p><strong>vep_hgvsp</strong>
+Human Genome Variation Sequence p-syntax nomenclature (from VEP)</p>
+<p><strong>vep_hgvs_offset</strong>
+Human Genome Variation Sequence nomenclature offset(from VEP)</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Variants annotation fields</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-variant-information">General variant information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#structural-variation-columns">Structural variation columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ncbi-information">NCBI information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-information">Clinical information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#function-predictor">Function predictor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conservation-scores">Conservation scores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#population-information">Population information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#encode-information">ENCODE information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cancer-related-columns">Cancer related columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hgvs-nomenclature">HGVS nomenclature</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">GenomeUp documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Andrea Spinelli.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/annotation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -88,7 +88,9 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+        $PROJECT/static/requests-sidebar.png
+        }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -114,9 +116,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'docdoc'
-html_logo = static/requests-sidebar.png
-
+# htmlhelp_basename = 'docdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 

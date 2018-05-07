@@ -25,3 +25,11 @@ Set the population type in: African/African American (AFR), Latino (AMR), Ashken
 
 * **Phenotype** *(optional)*
 To specify the phenotype under consideration. Please follow the `HPO <http://human-phenotype-ontology.github.io/>`_ format.
+
+Variants
+~~~~~~~~
+
+**Filter variants**
+*...page under construction...*
+**Export data**
+

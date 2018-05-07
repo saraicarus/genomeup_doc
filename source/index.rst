@@ -27,7 +27,7 @@ The User Guide
 .. toctree::
    :maxdepth: 2
 
-   get_start
+   get start
    annotation
 
 

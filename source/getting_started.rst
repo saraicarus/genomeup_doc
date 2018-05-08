@@ -9,7 +9,7 @@ Start new analysis
 The first operation is the upload of a VCF analysis file. 
 After login, you can use the bottom called "Start a new analysis" to upload a VCF file.
 
-.. image :: /static/start_new_analysis.png
+.. image :: /_static/start_new_analysis.png
 
 
 **Subject**

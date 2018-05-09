@@ -1,32 +1,23 @@
 Variants annotation fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-General variant information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Location**
+The position of variant as *chrom:start*. The *chrom* is the chromosome on which the variant resides (from VCF CHROM field) and *start* is the physical position on the chromosome (1-based coordinate).
 
-**Relevance**
+Genomic and genetic data
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Pathogenicity**
-
-**Notes**
-
-**chrom**
-The chromosome on which the variant resides (from VCF CHROM field).
-
-**start(1-coor)**
-Physical position on the chromosome as to hg19 (1-based coordinate)
-
-**end**
-The 1-based end position. (from VCF POS field, yet inferred based on the size of the variant)
-
-**vcf_id**
-The VCF IDfield.
-
-**ref**
+**Ref**
 Reference allele (from VCF REF field).
 
-**alt**
+**Alt**
 Alternate allele for the variant (from VCF ALT field).
+
+**AA**
+What is the amino acid change (for a snp)?
+
+**Zygosity**
+The zygosity of the variant in patient. Inferred from the VCF GT genotype tag as:  *het* for a call of a heterozygous genotype, *hom_ref* for a call of a homozygous reference genotype and *hom_alt* for a call of a homozygous alternate (variant) genotype.
 
 **qual**
 Quality score for the assertion made in ALT (from VCF QUAL field).
@@ -234,9 +225,6 @@ The observed allele frequency for the alternate allele
 
 **codon_change**
 What is the codon change?
-
-**aa_change**
-What is the amino acid change (for a snp)?
 
 **aa_length**
 Has the format pos/len when biotype=protein_coding, is empty otherwise. len=protein length. pos = position of the amino acid change when is_coding=1 and is_exonic=1, ‘-‘ otherwise.

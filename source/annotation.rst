@@ -4,6 +4,12 @@ Variants annotation fields
 General variant information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+**Relevance**
+
+**Pathogenicity**
+
+**Notes**
+
 **chrom**
 The chromosome on which the variant resides (from VCF CHROM field).
 

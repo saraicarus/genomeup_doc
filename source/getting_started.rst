@@ -29,13 +29,20 @@ To specify the phenotype under consideration. Please follow the `HPO <http://hum
 
 Variants analysis
 ~~~~~~~~~~~~~~~~~
-After the VCF file upload...
+After the VCF file upload, it'll possible see the new analysis into *Analyses* page with the status field on working mode.
+Dopo un po' di tempo, nel momento in cui lo status dell'analisi passa ad è possibile esplorare le varianti annotate clikando sull'icona [folder].
+
+**Variants**
+La pagina presenta tutte le varinti presenti all'interno del VCF annotate con tutta una serie di informazioni raggruppate in macro aree, come specificato qui [link annotazione].
 
 **Filter variants**
 
-*...page under construction...*
+Filtrare le varianti è possibile attraverso diversi strumenti di filtraggio.
+Ogni campo di annotazione è ordinabile secondo valori crescenti o decrescenti semplicemente clickando sull'header della colonna.
+
+*...to be continued*
 
 **Export data**
 
-*...page under construction...*
+Una volta filtrate le varianti è possibile esportare tutti i risultati visualizzati attraverso il bottone *Excel Export*
 

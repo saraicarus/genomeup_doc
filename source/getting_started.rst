@@ -33,6 +33,7 @@ After the VCF file upload, it'll possible see the new analysis into *Analyses* p
 Dopo un po' di tempo, nel momento in cui lo status dell'analisi passa ad è possibile esplorare le varianti annotate clikando sull'icona [folder].
 
 **Variants**
+
 La pagina presenta tutte le varinti presenti all'interno del VCF annotate con tutta una serie di informazioni raggruppate in macro aree, come specificato qui [link annotazione].
 
 **Filter variants**
@@ -42,7 +43,7 @@ Ogni campo di annotazione è ordinabile secondo valori crescenti o decrescenti s
 
 *...to be continued*
 
-**Export data**
-
-Una volta filtrate le varianti è possibile esportare tutti i risultati visualizzati attraverso il bottone *Excel Export*
+Export data
+~~~~~~~~~~~
+Una volta filtrate le varianti è possibile esportare tutti i risultati visualizzati attraverso il bottone *Excel Export*.
 

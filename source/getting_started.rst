@@ -25,7 +25,7 @@ Set the gender of patient of the sample.
 Set the population type in: African/African American (AFR), Latino (AMR), Ashkenazi Jewish (ASJ), East Asian (EAS), Finnish (FIN), Non-Finnish European (NFE), South Asian (SAS), Other (OTH).
 
 **Phenotype** *(optional)*
-To specify the phenotype under consideration. Please follow the `HPO <http://human-phenotype-ontology.github.io/>`_ format.
+To specify the phenotype under consideration. Consider to follow the `HPO <http://human-phenotype-ontology.github.io/>`_ format.
 
 Variants analysis
 ~~~~~~~~~~~~~~~~~

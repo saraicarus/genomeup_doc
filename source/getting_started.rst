@@ -34,7 +34,7 @@ Dopo un po' di tempo, nel momento in cui lo status dell'analisi passa ad è poss
 
 **Variants**
 
-La pagina presenta tutte le varinti presenti all'interno del VCF annotate con tutta una serie di informazioni raggruppate in macro aree, come specificato qui [link annotazione].
+La pagina presenta tutte le varinti presenti all'interno del VCF annotate con tutta una serie di informazioni raggruppate in macro aree, come specificato qui :doc:'/annotation'.
 
 **Filter variants**
 

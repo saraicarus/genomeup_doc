@@ -34,7 +34,7 @@ Dopo un po' di tempo, nel momento in cui lo status dell'analisi passa ad è poss
 
 **Variants**
 
-The *Variants* page shows the collection of the annotate VCF variants grouped in under macro areas, as specified in :doc:`annotation`.
+The *Variants* page shows the collection of the annotate VCF variants grouped under macro areas, as specified in :doc:`annotation`.
 
 **Filter variants**
 

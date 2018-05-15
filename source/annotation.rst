@@ -156,3 +156,15 @@ Proteomic and Proteic data
 
 GenomeUp Predictions
 ~~~~~~~~~~~~~~~~~~~~
+
+**AI 2D**
+
+**AI 3D**
+
+**Homology Modeling**
+
+**Docking**
+
+**Molecular Dynamics**
+
+**RMSD WTxMT**

@@ -1,5 +1,5 @@
 # GenomeUp Guide
-This is the repository for the user documentation of the `GenomeUp`_ platform.
+This is the repository for the user documentation of the `GenomeUp` platform.
 
 The builded docs is hosted by `Read the Docs`_ and is available on `GenomeUp doc`_ .
 It supports `Sphinx`_ docs written with `reStructuredText`_ .

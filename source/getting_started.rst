@@ -12,10 +12,10 @@ After login, you can use the bottom called "Start a new analysis" to upload a VC
 .. image :: /_static/start_new_analysis.png
 
 
-**Subject**
+**Subject** *(required)*
 Set the name of the analysis. 
 
-**Reference Genome**
+**Reference Genome** *(required)*
 Version of the `reference <https://en.wikipedia.org/wiki/Reference_genome/>`_ assembly database to the genome alignment: GRCh37(or hg19) and GRCh38.
 
 **Gender** *(optional)*

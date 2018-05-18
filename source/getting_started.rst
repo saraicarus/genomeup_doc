@@ -61,5 +61,5 @@ Below, it's possibile to add a note regarding the variant in free text.
 
 Export filtered data
 ~~~~~~~~~~~~~~~~~~~~
-Una volta filtrate le varianti è possibile esportare tutti i risultati visualizzati attraverso il bottone *Excel Export*.
+Once filtered the variants, the user can export it through the *Excel Export* bottom.
 

@@ -2,12 +2,15 @@ Getting started
 ^^^^^^^^^^^^^^^
 
 GenomeUp allow to annotate, filter and visualize the variants of a VCF file.
+After the login, the user landing on a dashboard paga called *Your Analyses*.
+Into the *Your Analyses* page the user can explors his analyses and allows to start a new analysis using our *Start a new analysis* wizard.
+On left, the user can finds the icon botton to return at home page, to start new analysis, read the user guide and contacts form.
 
+.. image :: /_static/your_analyses.jpg
 
 Start new analysis
 ~~~~~~~~~~~~~~~~~~
-The first operation is the upload of a VCF analysis file. 
-After login, you can use the bottom called "Start a new analysis" to upload a VCF file.
+The user can initiate a new analysis by clicking on the "Start a new analysis" button, which in a new samples can be uploaded (VCF format) and other details regarding the subject of the analysis can be entered.
 
 .. image :: /_static/start_new_analysis.png
 

@@ -27,6 +27,10 @@ Set the population type in: African/African American (AFR), Latino (AMR), Ashken
 **Phenotype** *(optional)*
 To specify the phenotype under consideration. Consider to follow the `HPO <http://human-phenotype-ontology.github.io/>`_ format.
 
+Analyses
+~~~~~~~~
+
+
 Variants analysis
 ~~~~~~~~~~~~~~~~~
 After the VCF file upload, it'll possible see the new analysis into *Analyses* page with the status field on working mode.
@@ -43,7 +47,13 @@ Ogni campo di annotazione è ordinabile secondo valori crescenti o decrescenti s
 
 *...to be continued*
 
-Export data
-~~~~~~~~~~~
+**Annotate variants**
+To the left of each variant row there are three annotation types that can be defined per candidate variant. 
+Clicking on this section will present the *Annotate variant* popup where it's possibile to define the relevance (High, Med or Low) and the pathogenicity of the variant on the top (Pathongenic, Likely Pathogenic, Uncertain Significance, Likely Benign, Benign). 
+Below, it's possibile to add a note regarding the variant in free text.
+
+
+Export filtered data
+~~~~~~~~~~~~~~~~~~~~
 Una volta filtrate le varianti è possibile esportare tutti i risultati visualizzati attraverso il bottone *Excel Export*.
 

@@ -35,7 +35,7 @@ Analyses
 The *Your Analyses* page shows the collection of the uploaded files. 
 The status column report the elaboration phase of the single analysis: analysing, analysed or error.
 When the status correspont to *analysed*, the list of the annotated variants is available. 
-With the folder icon .. image :: /_static/folder.png , the user can to access to the *Variants analysis* page.
+With the folder icon, the user can to access to the *Variants analysis* page.
 If the user wants to delete his analysis can use the trash icon.
 
 
@@ -48,8 +48,8 @@ The *Variants* page shows the collection of the annotate VCF variants grouped un
 
 **Filter variants**
 
-Filtrare le varianti è possibile attraverso diversi strumenti di filtraggio.
-Ogni campo di annotazione è ordinabile secondo valori crescenti o decrescenti semplicemente clickando sull'header della colonna.
+Through each of the column titles in the grid the user can easily add, edit or remove filters while reviewing the variants. 
+Each filter that the user add through the column title will also be displayed in this pane on the left.
 
 *...to be continued*
 

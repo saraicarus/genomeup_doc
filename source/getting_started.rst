@@ -32,6 +32,11 @@ To specify the phenotype under consideration. Consider to follow the `HPO <http:
 
 Analyses
 ~~~~~~~~
+The *Your Analyses* page shows the collection of the uploaded files. 
+The status column report the elaboration phase of the single analysis: analysing, analysed or error.
+When the status correspont to *analysed*, the list of the annotated variants is available. 
+With the folder icon, the user can to access to the *Variants analysis* page.
+If the user wants to delete his analysis can use the trash icon.
 
 
 Variants analysis

@@ -12,7 +12,7 @@ Start new analysis
 ~~~~~~~~~~~~~~~~~~
 The user can initiate a new analysis by clicking on the "Start a new analysis" button, which in a new samples can be uploaded (VCF format) and other details regarding the subject of the analysis can be entered.
 
-.. image :: /_static/start_new_analysis.png
+.. image :: /_static/start_new_analysis.jpg
 
 
 **Subject** *(required)*

@@ -35,14 +35,12 @@ Analyses
 The *Your Analyses* page shows the collection of the uploaded files. 
 The status column report the elaboration phase of the single analysis: analysing, analysed or error.
 When the status correspont to *analysed*, the list of the annotated variants is available. 
-With the folder icon, the user can to access to the *Variants analysis* page.
+With the folder icon .. image :: /_static/folder.png , the user can to access to the *Variants analysis* page.
 If the user wants to delete his analysis can use the trash icon.
 
 
 Variants analysis
 ~~~~~~~~~~~~~~~~~
-After the VCF file upload, it'll possible see the new analysis into *Analyses* page with the status field on working mode.
-Dopo un po' di tempo, nel momento in cui lo status dell'analisi passa ad è possibile esplorare le varianti annotate clikando sull'icona [folder].
 
 **Variants**
 

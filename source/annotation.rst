@@ -112,7 +112,7 @@ Frequency
 ~~~~~~~~~
 
 **Max AF**
-The maximum of aaf_gnomad{afr,amr,eas,nfe,sas},aaf_esp_ea, aaf_esp_aa, aaf_1kg_amr, aaf_1kg_eas,aaf_1kg_sas,aaf_1kg_afr,aaf_1kg_eur,aaf_adj_exac_afr,aaf_adj_exac_amr,aaf_adj_exac_eas,aaf_adj_exac_nfe,aaf_adj_exac_sas. and -1 if none of those databases/populations contain the variant.
+The maximum of  aaf_gnomad{afr,amr,eas,nfe,sas}, aaf_esp_ea, aaf_esp_aa, aaf_1kg_amr, aaf_1kg_eas, aaf_1kg_sas, aaf_1kg_afr, aaf_1kg_eur, aaf_adj_exac_afr, aaf_adj_exac_amr, aaf_adj_exac_eas, aaf_adj_exac_nfe, aaf_adj_exac_sas, and -1 if none of those databases/populations contain the variant.
 
 **1K Genome AF**
 Global allele frequency (based on AC/AN) (1000g project - phase 3)

@@ -5,4 +5,4 @@ This is the repository for the user documentation of the `GenomeUp <https://www.
 The builded docs is hosted by `Read the docs <http://readthedocs.org/>`_ and is available on `GenomeUp doc <http://genomeup-doc.readthedocs.io/en/latest/index.html>`_.
 It supports `Sphinx <http://sphinx.pocoo.org/>`_ docs written with `reStructuredText <http://sphinx.pocoo.org/rest.html>`_ .
 
-
+If you have questions or suggestions contact me here on GitHub or send a request by andrea.spinelli@genomeup.com

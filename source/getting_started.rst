@@ -71,21 +71,8 @@ Furthermore, clicking on the rigth side of each columns titles, is avalaible a c
 
 On right of table is avalaible the tool pane.
 The **Tool panel** is split into difference sections which are follows:
-- Pivot Mode Section: Check the 'Pivot Mode' checkbox to turn the grid into Pivot Mode. Uncheck to take the grid out of pivot mode.
-- Expand / Collapse All: Toggle to expand or collapse all column groups.
-- Columns Section: Display all columns, grouped by column groups, that are available to be displayed in the grid. The order of the columns is the order in which columns were provided to the grid and do not change even if the user changes the column order inside the grid.
-- Select / Un-select All: Toggle to select or un-select all columns in the columns section.
-- Side Button: Shows and hides the tool panel.
-- Select / Un-Select Column (or Group): Each column can be individually selected. What selection means depends on pivot mode and is explained below.
-- Drag Handle: Each column can be dragged either with the mouse or via touch on touch devices. The column can then be dragged to one of the following:
-    - Row Groups Section
-    - Values (Pivot) Section
-    - Column Labels Section
-    - Onto the grid.
-- Row Groups Section: Columns here will form the grids Row Grouping.
-- Values Section: Columns here will form the grids Aggregations. The grid calls this function 'Aggregations', however for the UI we follow Excel naming convention and call it 'Values'.
-- Column Labels (Pivot) Section: Columns here will form the grids Pivot. The grid calls this function 'Pivot', however for the UI we follow Excel naming convention and call it 'Column Labels'.
 
+*..work in progress**
 
 **Annotate variants**
 Into the left of each variant row there are three annotation types that can be defined per candidate variant. 

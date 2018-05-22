@@ -42,6 +42,8 @@ If the user wants to delete one of its analysis can use the trash icon.
 Variants analysis
 ~~~~~~~~~~~~~~~~~
 
+.. image :: /_static/screen.png
+
 **Variants**
 
 The *Variants* page shows the collection of the annotated -vcf variants grouped by macro areas, as specified in :doc:`annotation`.

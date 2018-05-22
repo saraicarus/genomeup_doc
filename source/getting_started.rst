@@ -50,7 +50,23 @@ The *Variants* page shows the collection of the annotated -vcf variants grouped 
 
 **Filter variants**
 
-Through each of the column titles in the grid the user can easily add, edit or remove filters while reviewing the variants. 
+Through each of the column titles in the grid the user can easily add, edit or remove filters while reviewing the variants.
+Clicking on the each colums titles the user can sort the data by ascending or discending order.
+
+Furthermore, clicking on the rigth side of each columns titles, is avalaible a column menu with three panels: *filter tab*, *general tab* and *columns tab*.
+
+.. image :: /_static/filter_tab.png
+
+- Filter tab
+    - Pin columns: to lock the specific column on right or left of table, above the other columns;
+    - Autosize this column:
+    - Autosize all columns:
+    - Group by: 
+    - Reset columns:
+    - Tool panel: to open the tool panel on right of table.
+    
+- General tab
+- Columns tab
 
 *...to be continued*
 

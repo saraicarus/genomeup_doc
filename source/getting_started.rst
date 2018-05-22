@@ -76,7 +76,7 @@ The **Tool panel** is split into difference sections which are follows:
 - Columns Section: Display all columns, grouped by column groups, that are available to be displayed in the grid. The order of the columns is the order in which columns were provided to the grid and do not change even if the user changes the column order inside the grid.
 - Select / Un-select All: Toggle to select or un-select all columns in the columns section.
 - Side Button: Shows and hides the tool panel.
-- Select / Un-Select Column (or Group): Each column can be individually selected. What selection means depends on pivot mode and is explained below*.
+- Select / Un-Select Column (or Group): Each column can be individually selected. What selection means depends on pivot mode and is explained below.
 - Drag Handle: Each column can be dragged either with the mouse or via touch on touch devices. The column can then be dragged to one of the following:
     - Row Groups Section
     - Values (Pivot) Section

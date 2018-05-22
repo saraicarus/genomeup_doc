@@ -58,15 +58,17 @@ Furthermore, clicking on the rigth side of each columns titles, is avalaible a c
 .. image :: /_static/filter_tab.png
 
 - Filter tab
-    - Pin columns: to lock the specific column on right or left of table, above the other columns;
-    - Autosize this column:
-    - Autosize all columns:
-    - Group by: 
-    - Reset columns:
+    - Pin columns: to lock the specific column on right or left of table, above the other columns.
+    - Autosize this column.
+    - Autosize all columns.
+    - Group by: to group by the content of the column.
+    - Reset columns: to reset all filters and column setting.
     - Tool panel: to open the tool panel on right of table.
     
-- General tab
-- Columns tab
+- General tab: to filter by content of the selected column. If the column content is alfhabetic will be appear the list of  content and a search tool for free text. If the column content is numerical will be appear different constraints: *equals, not equals, less than, less than or equals, greater than, greater than or equals,in range*.
+
+- Columns tab: to show or hide column or group of columns.
+
 
 *...to be continued*
 

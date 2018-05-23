@@ -74,6 +74,7 @@ On right of table is avalaible the tool pane.
 .. image :: /_static/tool_panel.png
 
 The **Tool panel** is split into difference sections which are follows:
+
 - **Pivot mode section**: check the *Pivot Mode* checkbox to turn the grid into Pivot Mode. Pivoting allows the user to take a columns values and turn them into columns.
 - **Column filter**: filter the column that the user wants show.
 - **Columns section**: display all columns, grouped by column groups, that are available to be displayed in the grid. The order of the columns is the order in which columns were provided to the grid and do not change even if the user changes the column order inside the grid.

@@ -91,6 +91,7 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
         'logo': 'logo.png',
+        'font_family':''Source Sans Pro', sans-serif;'
         }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -115,6 +116,7 @@ html_sidebars = {
         'donate.html',
     ]
 }
+
 
 
 # -- Options for HTMLHelp output ------------------------------------------

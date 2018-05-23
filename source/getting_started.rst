@@ -70,9 +70,20 @@ Furthermore, clicking on the rigth side of each columns titles, is avalaible a c
 - **Columns tab**: to show or hide column or group of columns.
 
 On right of table is avalaible the tool pane.
-The **Tool panel** is split into difference sections which are follows:
 
-*..work in progress**
+.. image :: /_static/tool_panel.png
+
+The **Tool panel** is split into difference sections which are follows:
+- **Pivot mode section**: check the *Pivot Mode* checkbox to turn the grid into Pivot Mode. Pivoting allows the user to take a columns values and turn them into columns.
+- **Column filter**: filter the column that the user wants show.
+- **Columns section**: display all columns, grouped by column groups, that are available to be displayed in the grid. The order of the columns is the order in which columns were provided to the grid and do not change even if the user changes the column order inside the grid.
+- **Row groups section**: columns here will form the grids row grouping. 
+- **Values section**: columns here will When grouping, the user can apply an aggregation function to any column to populate the group row with values.
+
+- **Side button**: shows and hides the tool panel.
+- **Select/Unselect column**: each column can be individually selected. 
+- **Drag handle**: each column can be dragged with the mouse. The column can then be dragged either to row groups section or to values section.
+
 
 **Annotate variants**
 Into the left of each variant row there are three annotation types that can be defined per candidate variant. 

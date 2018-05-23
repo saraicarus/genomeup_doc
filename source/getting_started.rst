@@ -10,7 +10,7 @@ On the left, the user can finds the icon botton to return at home page, to start
 
 Start a new analysis
 ~~~~~~~~~~~~~~~~~~~~
-The user can begin a new analysis by clicking on the "Start a new analysis" button, in which a new sample can be uploaded (.vcf format) and, moreover, can be added other details about the subject.
+The user can begin a new analysis by clicking on the "Start a new analysis" button, in which a new sample can be uploaded (.vcf or .gz format) and, moreover, can be added other details about the subject.
 
 .. image :: /_static/start_new_analysis.jpg
 

@@ -91,7 +91,8 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
         'logo': 'logo.png',
-        'font_family':''Source Sans Pro', sans-serif;'
+        'font_family':''Source Sans Pro', sans-serif',
+        'head_font_family':'font-family: 'Oxygen', sans-serif',
         }
 
 # Add any paths that contain custom themes here, relative to this directory.

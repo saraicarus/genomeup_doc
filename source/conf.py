@@ -91,6 +91,7 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
         'logo': 'logo.png',
+        'font-family':'Souce Sans Pro',
         }
 
 # Add any paths that contain custom themes here, relative to this directory.

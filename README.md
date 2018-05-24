@@ -7,4 +7,4 @@ It supports `Sphinx <http://sphinx.pocoo.org/>`_ docs written with `reStructured
 
 If you have questions or suggestions contact me here on GitHub or send a request by andrea.spinelli@genomeup.com
 
-[genomup]: http://www.genomeup.com/
+[genomeup]: http://www.genomeup.com/

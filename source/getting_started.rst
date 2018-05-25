@@ -3,6 +3,7 @@ Getting started
 
 GenomeUp allows to annotate, filter and view the variants of a .vcf file.
 After the login, the user lands in the Your Analysis page.
+
 In the *Your Analysis* page the user will find a list of all the analysis.
 The page will be empty at first login.
 To run the first analysis, click on *Start a new analysis* on the top right. 

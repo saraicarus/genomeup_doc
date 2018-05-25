@@ -92,7 +92,7 @@ Into the left of each variant row, there are three annotation types that can be 
 .. image :: /_static/annotate_variants.png
 
 Clicking Annotate variant to set the **relevance**: 
-- High 
+- High
 - Med
 - Low
 and the **pathogenicity** of the variant:
@@ -105,5 +105,5 @@ Moreover, it’s possible to add a note using the textbox.
 
 Export filtered data
 ~~~~~~~~~~~~~~~~~~~~
-Once filtered the variants, the user can export into an .xls fine through the *Excel Export* bottun.
+Once the variants are filtered, the user can download the report into an .xls file, by clicking on the *Excel Export* button.
 

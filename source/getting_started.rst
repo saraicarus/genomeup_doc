@@ -87,10 +87,21 @@ The **Tool panel** is split into difference sections which are follows:
 
 
 **Annotate variants**
-Into the left of each variant row there are three annotation types that can be defined per candidate variant. 
-Clicking on this section will appear the *Annotate variant* popup where it's possibile to set the relevance (High, Med or Low) and the pathogenicity of the variant on the top (Pathongenic, Likely Pathogenic, Uncertain Significance, Likely Benign, Benign). 
-Motreover, it's possibile to add a note using the textbox.
+Into the left of each variant row, there are three annotation types that can be defined per candidate variant.
 
+.. image :: /_static/annotate_variants.png
+
+Clicking Annotate variant to set the **relevance**: 
+- High 
+- Med
+- Low
+and the **pathogenicity** of the variant:
+- Pathogenic
+- Likely Pathogenic
+- Uncertain Significance
+- Likely Benign
+- Benign
+Moreover, it’s possible to add a note using the textbox.
 
 Export filtered data
 ~~~~~~~~~~~~~~~~~~~~

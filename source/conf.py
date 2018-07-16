@@ -92,6 +92,9 @@ html_theme = 'alabaster'
 html_theme_options = {
         'logo': 'logo.png',
         'font-family':'Souce Sans Pro',
+        'googlewebfont': True,
+        'googlewebfont_url': 'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
+        'googlewebfont_style': "font-family: 'Source Sans Pro', sans-serif",
         }
 
 # Add any paths that contain custom themes here, relative to this directory.

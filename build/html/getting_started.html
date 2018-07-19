@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting started &#8212; doc 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Variants annotation fields" href="annotation.html" />
+    <link rel="prev" title="GenomeUp documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>GenomeUp allows to annotate, filter and view the variants of a .vcf file.
+After the login, the user lands in the&nbsp;Your Analysis page.</p>
+<p>In the&nbsp;<em>Your Analysis</em>&nbsp;page the user will find a list of all the analysis.
+The page will be empty at first login.
+To run the first analysis, click on&nbsp;<em>Start a new analysis</em>&nbsp;on the top right.
+On the far left, the user can find the following buttons:</p>
+<ul class="simple">
+<li>return to home page</li>
+<li>start a new analysis</li>
+<li>read the user guide</li>
+<li>send us an email</li>
+</ul>
+<img alt="_images/your_analyses.jpg" src="_images/your_analyses.jpg" />
+<div class="section" id="start-a-new-analysis">
+<h2>Start a new analysis<a class="headerlink" href="#start-a-new-analysis" title="Permalink to this headline">¶</a></h2>
+<p>The user can upload a new sample (.vcf or .gz format) and, moreover, add other details about the subject.</p>
+<img alt="_images/start_new_analysis.jpg" src="_images/start_new_analysis.jpg" />
+<p><strong>Subject</strong> <em>(required)</em>
+Set the name of the analysis.</p>
+<p><strong>Reference Genome</strong> <em>(required)</em>
+Choose the version of the <a class="reference external" href="https://en.wikipedia.org/wiki/Reference_genome">reference</a> assembled sequence database of the human genome: GRCh37(or hg19) and GRCh38.</p>
+<p><strong>Gender</strong> <em>(optional)</em>
+Set the gender of patient of the sample.</p>
+<p><strong>Ethnicity</strong> <em>(optional)</em>
+Set the population type in:</p>
+<ul class="simple">
+<li>African/African American (AFR)</li>
+<li>Latino (AMR)</li>
+<li>Ashkenazi Jewish (ASJ)</li>
+<li>East Asian (EAS)</li>
+<li>Finnish (FIN)</li>
+<li>Non-Finnish European (NFE)</li>
+<li>South Asian (SAS)</li>
+<li>Other (OTH).</li>
+</ul>
+<p><strong>Phenotype</strong> <em>(optional)</em>
+Specify the phenotype under consideration following the <a class="reference external" href="http://human-phenotype-ontology.github.io/">HPO</a> format.</p>
+</div>
+<div class="section" id="analyses">
+<h2>Analyses<a class="headerlink" href="#analyses" title="Permalink to this headline">¶</a></h2>
+<p>The <em>Your Analyses</em> page shows the collection of the uploaded files.
+The field <em>status</em> shows the elaboration phase of the single analysis: <strong>analysing</strong>, <strong>analysed</strong> or <strong>error</strong>.
+When the status switch into <em>analysed</em>, the list of the annotated variants is available.
+With the <strong>folder</strong> icon, the user can to access to the <em>Variants analysis</em> page.
+If the user wants to delete one of its analysis can use the <strong>trash</strong> icon.</p>
+<img alt="_images/list_analyses.png" src="_images/list_analyses.png" />
+</div>
+<div class="section" id="variants-analysis">
+<h2>Variants analysis<a class="headerlink" href="#variants-analysis" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/screen.png" src="_images/screen.png" />
+<p><strong>Variants</strong>
+The <em>Variants</em> page shows the collection of the annotated .vcf variants, clustered by macro areas, as specified in <a class="reference internal" href="annotation.html"><span class="doc">Variants annotation fields</span></a>.</p>
+<p><strong>Filter variants</strong></p>
+<p>Through each of the column titles in the grid the user can easily add, edit or remove filters while reviewing the variants.
+Click on each columns title to sort the data by ascending or descending order.
+Click on the right side of each columns title for the <strong>column menu</strong>. It has three panels: <em>filter tab</em>, <em>general tab</em> and <em>columns tab</em>.</p>
+<img alt="_images/filter_tab.png" src="_images/filter_tab.png" />
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><strong>Filter tab</strong></dt>
+<dd><ul class="first last">
+<li><strong>Pin columns</strong>: locks the specific column on right or left of table, above the other columns.</li>
+<li><strong>Autosize this column.</strong></li>
+<li><strong>Autosize all columns.</strong></li>
+<li><strong>Group by</strong>: groups by the content of the column.</li>
+<li><strong>Reset columns</strong>: resets all filters and column setting.</li>
+<li><strong>Tool panel</strong>: opens the tool panel on right of table.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><strong>General tab</strong>: filters the selected column by content. If the column content is alphabetic, the outcome will be a list of content and a search tool for free text. If the column content is numerical, the outcome will consist of different constraints: <em>equals, not equals, less than, less than or equals, greater than, greater than or equals,in range</em>.</li>
+<li><strong>Columns tab</strong>: shows or hides column or group of columns.</li>
+</ul>
+<p>On right of table is avalaible the tool pane.</p>
+<img alt="_images/tool_panel.png" src="_images/tool_panel.png" />
+<p>The <strong>Tool panel</strong> (on the right) is split into the following sections:</p>
+<ul class="simple">
+<li><strong>Pivot mode section</strong>: Pivoting allows the user to take columns values and turn them into columns.</li>
+<li><strong>Column filter</strong>: filters the column that the user wants to show.</li>
+<li><strong>Columns section</strong>: displays all columns, clustered by column groups, available in the displayed grid. Columns order provides the columns grid and cannot be changed by user.</li>
+<li><strong>Row groups section</strong>: columns can be dragged and dropped into <em>Row Group</em> to cluster into a single column the selected variants (for example, zygosity, severity, gene and annotated variants etc.) and can also allow to create subgroups.</li>
+<li><strong>Values section</strong>: (can be obtainable only in Pivot Mode) applies functions to column values: <em>average, count, first, last, max, min, sum</em>.</li>
+<li><strong>Side button</strong>: shows and hides the tool panel.</li>
+<li><strong>Select/Unselect column</strong>: each column can be individually selected.</li>
+<li><strong>Drag handle</strong>: each column can be dragged and dropped either to <em>Row Groups</em> or to <em>Values</em>.</li>
+</ul>
+<p><strong>Annotate variants</strong>
+Into the left of each variant row, there are three annotation types that can be defined per candidate variant.</p>
+<img alt="_images/annotate_variants.png" src="_images/annotate_variants.png" />
+<p>Clicking&nbsp;Annotate variant to set the <strong>relevance</strong>:</p>
+<ul class="simple">
+<li>High</li>
+<li>Med</li>
+<li>Low</li>
+</ul>
+<p>and the <strong>pathogenicity</strong> of the variant:</p>
+<ul class="simple">
+<li>Pathogenic</li>
+<li>Likely Pathogenic</li>
+<li>Uncertain Significance</li>
+<li>Likely Benign</li>
+<li>Benign</li>
+</ul>
+<p>Moreover, it’s possible to add a note using the textbox.</p>
+</div>
+<div class="section" id="export-filtered-data">
+<h2>Export filtered data<a class="headerlink" href="#export-filtered-data" title="Permalink to this headline">¶</a></h2>
+<p>Once the variants are filtered, the user can download the report into an .xls file, by clicking on the&nbsp;<em>Excel Export</em>&nbsp;button.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#start-a-new-analysis">Start a new analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#analyses">Analyses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variants-analysis">Variants analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#export-filtered-data">Export filtered data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annotation.html">Variants annotation fields</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">GenomeUp documentation</a></li>
+      <li>Next: <a href="annotation.html" title="next chapter">Variants annotation fields</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, GenomeUp srl.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/getting_started.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

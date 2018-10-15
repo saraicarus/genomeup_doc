@@ -29,7 +29,4 @@ The User Guide
 
    getting_started
    annotation
-<<<<<<< HEAD
    reference
-=======
->>>>>>> a54a80d35db3fbc1ab3c4a9e218244f526391d8c

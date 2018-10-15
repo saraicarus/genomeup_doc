@@ -19,7 +19,7 @@ Reference allele (from VCF REF field).
 Alternate allele for the variant (from VCF ALT field).
 
 **AA**
-The amino acid change, when applicable in *ref-pos-alt* format. The '%3D' symbol results a deletion.
+The amino acid change, when applicable in *ref-pos-alt* format.
 
 **Zygosity**
 The zygosity of the variant in patient. Inferred from the VCF GT genotype tag as:  *het* for a call of a heterozygous genotype, *hom_ref* for a call of a homozygous reference genotype and *hom_alt* for a call of a homozygous alternate (variant) genotype.

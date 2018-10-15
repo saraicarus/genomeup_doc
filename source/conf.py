@@ -34,7 +34,7 @@ import alabaster
 extensions = ['sphinx.ext.autodoc']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['ntemplates']
+templates_path = ['_template']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -91,10 +91,6 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
         'logo': 'logo.png',
-        'font-family':'Souce Sans Pro',
-        'googlewebfont': True,
-        'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Source+Sans+Pro',
-        'googlewebfont_style': "font-family: 'Source Sans Pro', sans-serif",
         }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -116,7 +112,6 @@ html_sidebars = {
         'navigation.html',
         'relations.html',  # needs 'show_related': True theme option to display
         'searchbox.html',
-        'donate.html',
     ]
 }
 
@@ -176,6 +171,3 @@ texinfo_documents = [
      author, 'doc', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-

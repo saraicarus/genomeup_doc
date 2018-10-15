@@ -29,7 +29,4 @@ The User Guide
 
    getting_started
    annotation
-
-
-
-
+   reference

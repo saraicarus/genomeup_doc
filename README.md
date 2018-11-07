@@ -11,4 +11,4 @@ If you have questions or suggestions contact me here on GitHub or send a request
 [readthedocs]: http://readthedocs.org/
 [genomeup-doc]: http://genomeup-doc.readthedocs.io/en/latest/index.html
 [sphinx]: http://sphinx.pocoo.org/
-[restructuredtext]: http://sphinx.pocoo.org/rest.html 
+[restructuredtext]: http://sphinx.pocoo.org/rest.html

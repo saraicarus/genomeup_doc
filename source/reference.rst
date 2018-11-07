@@ -3,13 +3,13 @@ References
 
 - vt [variant toolkit]
 
-    Adrian Tan, Gonçalo R. Abecasis and Hyun Min Kang. Unified Representation of Genetic Variants. Bioinformatics (2015) 31(13): 2202-2204
+  *Adrian Tan, Gonçalo R. Abecasis and Hyun Min Kang. Unified Representation of Genetic Variants. Bioinformatics (2015) 31(13): 2202-2204*
 
 - Gemini
 
-    Paila U, Chapman BA, Kirchner R, Quinlan AR (2013)
-    GEMINI: Integrative Exploration of Genetic Variation and Genome Annotations.
-    PLoS Comput Biol 9(7): e1003153. doi:10.1371/journal.pcbi.1003153
+  *Paila U, Chapman BA, Kirchner R, Quinlan AR (2013)
+  GEMINI: Integrative Exploration of Genetic Variation and Genome Annotations.
+  PLoS Comput Biol 9(7): e1003153. doi:10.1371/journal.pcbi.1003153*
 
 - Ensembl vep
 

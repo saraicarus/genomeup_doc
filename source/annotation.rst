@@ -1,6 +1,8 @@
 Variants annotation fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The main table is divided by *zygosity*: *Heterozygous* for all variants call of a heterozygous genotype and *Homozygous* for all variants call of a homozygous genotype.
+
 **Location**
 The position of variant as *chrom:start*. The *chrom* is the chromosome on which the variant resides (from VCF CHROM field) and *start* is the physical position on the chromosome (1-based coordinate).
 
@@ -20,9 +22,6 @@ Alternate allele for the variant (from VCF ALT field).
 
 **AA**
 The amino acid change, when applicable in *ref-pos-alt* format.
-
-**Zygosity**
-The zygosity of the variant in patient. Inferred from the VCF GT genotype tag as:  *het* for a call of a heterozygous genotype, *hom_ref* for a call of a homozygous reference genotype and *hom_alt* for a call of a homozygous alternate (variant) genotype.
 
 **HGVS**
 Human Genome Variation Sequence c-syntax nomenclature (from VEP).
